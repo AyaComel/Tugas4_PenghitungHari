@@ -66,13 +66,13 @@ Metode Hapus() di panggil
     System.exit(0);
     } 
 ~~~
-~~~
+
 # 3. Logika Program: 
 Penggunaan API tanggal (LocalDate), Perhitungan hari dalam bulan, Perhitungan tahun kabisat
 
 # 4. Events:
 • ActionListener untuk tombol Hitung
-
+~~~
  private void buttonHitungActionPerformed(java.awt.event.ActionEvent evt) {                                             
     buttonHitung.addActionListener((ActionEvent e) -> {
         MenghitungHari();
@@ -135,6 +135,7 @@ private void comboBulanItemStateChanged(java.awt.event.ItemEvent evt) {
             BulanTahun();
         });
     }    
+~~~
 ~~~
 Metode BulanTahun() akan di panggil
 private void BulanTahun() {
