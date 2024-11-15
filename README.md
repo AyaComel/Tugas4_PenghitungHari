@@ -137,7 +137,7 @@ private void cmbBoxBulanItemStateChanged(java.awt.event.ItemEvent evt) {
         });
     }    
 
-Metode BulanaTahun() akan di panggil
+Metode BulanTahun() akan di panggil
 
 private void BulanTahun() {
         int month = comboBulan.getSelectedIndex(); // Indeks bulan ComboBox mulai dari 0
@@ -189,6 +189,7 @@ private void SelisihHari() {
 
 # Hasil Gambar Project Ketika di Run
 ![](https://github.com/AyaComel/Tugas4_PenghitungHari/blob/main/Tugas4.png).
+
 ## Indikator Penilaian:
 
 | No  | Komponen         |  Persentase  |
