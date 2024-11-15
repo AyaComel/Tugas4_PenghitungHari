@@ -160,12 +160,11 @@ private void BulanTahun() {
 
 • Integrasikan fitur untuk menghitung selisih hari antara dua tanggal
 
- private void calculateDifferenceButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                          
+ private void buttonSelisihActionPerformed(java.awt.event.ActionEvent evt) {                                              
     // Event listener untuk tombol "Hitung Selisih Hari"
         buttonSelisih.addActionListener((ActionEvent e) -> {
             SelisihHari();
         });
-    
     }
 
 Metode SelisihHari() akan di panggil
