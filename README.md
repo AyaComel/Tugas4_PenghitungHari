@@ -43,6 +43,7 @@ private void buttonHapusActionPerformed(java.awt.event.ActionEvent evt) {
         });
     }      
 ~~~
+~~~
 Metode Hapus() di panggil
 // Metode untuk menghapus atau mereset pilihan
     private void Hapus() {
