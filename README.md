@@ -167,6 +167,7 @@ private void BulanTahun() {
     }
 ~~~
 Metode SelisihHari() akan di panggil
+~~~
 private void SelisihHari() {
     // Mendapatkan tanggal awal dan akhir dari JCalendar
     Calendar startCal = jCalendarAwal.getCalendar();
@@ -183,7 +184,6 @@ private void SelisihHari() {
     labelHasilSelisih.setText("Selisih hari antara dua tanggal: " + daysBetween + " hari");
 }
 ~~~   
-~~~
 # Hasil Gambar Project Ketika di Run
 ![](https://github.com/AyaComel/Tugas4_PenghitungHari/blob/main/Tugas4.png).
 
