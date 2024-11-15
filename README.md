@@ -19,7 +19,7 @@ JFrame, JPanel, JLabel, JComboBox, JSpinner, JButton, JCalendar
 
 - Button Hitung
 
-private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {                                          
+private void buttonHitungActionPerformed(java.awt.event.ActionEvent evt) {                                             
     buttonHitung.addActionListener((ActionEvent e) -> {
         MenghitungHari();
     });
@@ -27,22 +27,20 @@ private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {
 
 - Button Hitung Selisih Hari
 
-private void calculateDifferenceButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                          
+private void buttonSelisihActionPerformed(java.awt.event.ActionEvent evt) {                                              
     // Event listener untuk tombol "Hitung Selisih Hari"
         buttonSelisih.addActionListener((ActionEvent e) -> {
             SelisihHari();
         });
-    
     }      
 
 - Button Hapus
 
-private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {                                         
+private void buttonHapusActionPerformed(java.awt.event.ActionEvent evt) {                                            
     // Event listener untuk tombol "Hapus"
         buttonHapus.addActionListener((ActionEvent e) -> {
             Hapus();
         });
-    
     }      
 
 Metode Hapus() di panggil
@@ -64,8 +62,8 @@ Metode Hapus() di panggil
 
 - Button Keluar
 
-   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-    System.exit(0);       
+   private void buttonKeluarActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    System.exit(0);
     } 
 
 # 3. Logika Program: 
@@ -74,7 +72,7 @@ Penggunaan API tanggal (LocalDate), Perhitungan hari dalam bulan, Perhitungan ta
 # 4. Events:
 • ActionListener untuk tombol Hitung
 
- private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {                                          
+ private void buttonHitungActionPerformed(java.awt.event.ActionEvent evt) {                                             
     buttonHitung.addActionListener((ActionEvent e) -> {
         MenghitungHari();
     });
@@ -122,7 +120,7 @@ Metode MenghitungHari():
   
 • ChangeListener pada JSpinner untuk input tahun
 
-private void SpinnerTahunStateChanged(javax.swing.event.ChangeEvent evt) {                                          
+private void spinnerTahunStateChanged(javax.swing.event.ChangeEvent evt) {                                          
     spinnerTahun.addChangeListener((ChangeEvent e) -> {
         BulanTahun();
     });
@@ -130,8 +128,8 @@ private void SpinnerTahunStateChanged(javax.swing.event.ChangeEvent evt) {
 
 Listener untuk mengubah bulan dan tahun pada JCalendar saat ComboBox atau Spinner berubah
 
-private void cmbBoxBulanItemStateChanged(java.awt.event.ItemEvent evt) {                                             
-        // Listener untuk mengubah bulan dan tahun pada JCalendar saat ComboBox atau Spinner berubah
+private void comboBulanItemStateChanged(java.awt.event.ItemEvent evt) {                                            
+    // Listener untuk mengubah bulan dan tahun pada JCalendar saat ComboBox atau Spinner berubah
         comboBulan.addItemListener((ItemEvent e) -> {
             BulanTahun();
         });
