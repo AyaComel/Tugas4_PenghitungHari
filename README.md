@@ -171,20 +171,20 @@ private void BulanTahun() {
 Metode SelisihHari() akan di panggil
 
 private void SelisihHari() {
-        // Mendapatkan tanggal awal dan akhir dari JCalendar
-        Calendar startCal = jCalendarAwal.getCalendar();
-        Calendar endCal = jCalendarAkhir.getCalendar();
+    // Mendapatkan tanggal awal dan akhir dari JCalendar
+    Calendar startCal = jCalendarAwal.getCalendar();
+    Calendar endCal = jCalendarAkhir.getCalendar();
 
-        // Konversi Calendar ke LocalDate
-        LocalDate startDate = startCal.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-        LocalDate endDate = endCal.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+    // Konversi Calendar ke LocalDate
+    LocalDate startDate = startCal.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+    LocalDate endDate = endCal.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 
-        // Menghitung selisih hari menggunakan ChronoUnit.DAYS
-        long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
+    // Menghitung selisih hari menggunakan ChronoUnit.DAYS
+    long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
 
-        // Menampilkan hasil selisih hari pada JLabel
-        labelHasilSelisih.setText("Selisih hari antara dua tanggal: " + daysBetween + " hari");
-    }
+    // Menampilkan hasil selisih hari pada JLabel
+    labelHasilSelisih.setText("Selisih hari antara dua tanggal: " + daysBetween + " hari");
+}
     
 
 # Hasil Gambar Project Ketika di Run
